@@ -2,4 +2,4 @@
 
 set -e
 
-${ZPLIN_HOME}/bin/zeppelin.sh run
+${ZEPPELIN_HOME}/bin/zeppelin.sh run
