@@ -13,7 +13,7 @@ Re-compiled JDBC library added to avoid full scan of all database schemas on JDB
 
 ## Why base image is required?
 
-DockerHub does not cache image layers while compilation. Thus creation of base image (with pure NiFi) mitigates this issue and let us to experiment/play with NiFi settings w/o downloading full NiFi archive (more than 800MB) each time when we change smth. in configuration (or libs, add-ons, etc.) and recompile docker image. Only our changes will be pulled out from Docker Hub instead of full image.
+DockerHub does not cache image layers while compilation. Thus creation of base image (with pure Zeppelin) mitigates this issue and let us to experiment/play with Zeppelin settings w/o downloading full Zeppelin archive (more than 500MB) each time when we change smth. in configuration (or libs, add-ons, etc.) and recompile docker image. Only our changes will be pulled out from Docker Hub instead of full image.
 
 ```
                         ##         .
