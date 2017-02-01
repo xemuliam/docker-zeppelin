@@ -2,14 +2,14 @@
 
 # Zeppelin
 
-- ![Version](https://images.microbadger.com/badges/version/xemuliam/zeppelin:0.6.2.svg) ![Layers](https://images.microbadger.com/badges/image/xemuliam/zeppelin-base:0.6.2.svg)
+- ![Version](https://images.microbadger.com/badges/version/xemuliam/zeppelin:0.6.2.svg) ![Layers](https://images.microbadger.com/badges/image/xemuliam/zeppelin-base:0.6.2.svg) 0.6.2 = 0.6 = latest
 
 [Docker](https://www.docker.com/what-docker) image for [Apache Zeppelin](http://zeppelin.apache.org)
 
 - ![Docker builds](https://img.shields.io/docker/automated/xemuliam/zeppelin.svg) ![Docker Pulls](https://img.shields.io/docker/pulls/xemuliam/zeppelin.svg) ![Docker Stars](https://img.shields.io/docker/stars/xemuliam/zeppelin.svg)
  
 Created from Zepplin [base image](https://hub.docker.com/r/xemuliam/zeppelin-base) to minimize traffic and deployment time in case of changes should be applied on top of Zeppelin.
-Re-compiled JDBC library added to avoid full scan of all database schemas on JDBC-query initialization.
+Added re-compiled JDBC library to avoid full scan of all database schemas on JDBC-query initialization.
 
 ## Why base image is required?
 
