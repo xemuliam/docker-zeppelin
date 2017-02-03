@@ -16,14 +16,20 @@ Added re-compiled JDBC library to avoid full scan of all database schemas on JDB
 DockerHub does not cache image layers while compilation. Thus creation of base image (with pure Zeppelin) mitigates this issue and let us to experiment/play with Zeppelin settings w/o downloading full Zeppelin archive (more than 500MB) each time when we change smth. in configuration (or libs, add-ons, etc.) and recompile docker image. Only our changes will be pulled out from Docker Hub instead of full image.
 
 ```
-                        ##         .
-                  ## ## ##        ==
-               ## ## ## ## ##    ===
-           /"""""""""""""""""\___/ ===
-      ~~~ {~~ ~~~~ ~~~ ~~~~ ~~~ ~ /  ===- ~~~
-           \______ o Zeppelin  __/
-             \    \         __/
-              \____\_______/
+ __________
+< Zeppelin >
+ ----------
+    \
+     \
+      \
+                    ##        .
+              ## ## ##       ==
+           ## ## ## ##      ===
+       /""""""""""""""""___/ ===
+  ~~~ {~~ ~~~~ ~~~ ~~~~ ~~ ~ /  ===- ~~~
+       \______ o          __/
+        \    \        __/
+          \____\______/
 ```
   
 
