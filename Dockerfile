@@ -1,7 +1,6 @@
-FROM       xemuliam/zeppelin-base:0.6.2
+FROM       xemuliam/zeppelin-base:0.7.0
 MAINTAINER Viacheslav Kalashnikov <xemuliam@gmail.com>
 COPY       start_zeppelin.sh /${ZEPPELIN_HOME}/
-COPY       zeppelin-jdbc-0.6.2.jar /${ZEPPELIN_HOME}/interpreter/jdbc/
 WORKDIR    ${ZEPPELIN_HOME}
 RUN        chmod +x ./start_zeppelin.sh
 CMD        ./start_zeppelin.sh
