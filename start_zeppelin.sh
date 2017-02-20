@@ -2,4 +2,4 @@
 
 set -e
 
-${ZEPPELIN_HOME}/bin/zeppelin.sh run; sleep 5; tail -F ${ZEPPELIN_HOME}/logs/zeppelin-*.log
+sh ${ZEPPELIN_HOME}/bin/zeppelin-daemon.sh start; sleep 5; tail -F ${ZEPPELIN_HOME}/logs/zeppelin-*.log
