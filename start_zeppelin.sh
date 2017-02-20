@@ -2,5 +2,4 @@
 
 set -e
 
-tail -F ${ZEPPELIN_HOME}/logs/zeppelin-*.log &
-${ZEPPELIN_HOME}/bin/zeppelin.sh run
+${ZEPPELIN_HOME}/bin/zeppelin.sh run; sleep 5; tail -F ${ZEPPELIN_HOME}/logs/zeppelin-*.log
