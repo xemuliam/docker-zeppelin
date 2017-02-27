@@ -74,9 +74,9 @@ __*Please keep in mind that above properties are content-dependent. Thus at firs
 
 ## Official Documentation and Guides
 
-- [Overview](http://zeppelin.apache.org/docs/0.6.2/)
-- [Quick Start](http://zeppelin.apache.org/docs/0.6.2/install/install.html)
-- [Interpreters](http://zeppelin.apache.org/docs/0.6.2/manual/interpreters.html)
+- [Overview](http://zeppelin.apache.org/docs/0.7.0/)
+- [Explore Apache Zeppelin UI](http://zeppelin.apache.org/docs/0.7.0/quickstart/explorezeppelinui.html)
+- [Interpreters](http://zeppelin.apache.org/docs/0.7.0/manual/interpreters.html)
 - [Wiki](https://cwiki.apache.org/confluence/display/ZEPPELIN/Zeppelin+Home)
 
 
