@@ -38,7 +38,8 @@ DockerHub does not cache image layers while compilation. Thus creation of base i
 
 # Overview
 
-Dockerized single-host Zeppelin.
+Dockerized single-host Zeppelin.  
+Amended and recompiled __*JDBC interpreter*__ has been added to avoid full scan of database schemas and columns on interpreter initialization (there is SQL-completer which scans all described stuff. If your database contains tons of columns and tens schemas it will take several hours to initialize JDBC interpreter. Now this scan is switched off) 
 
 Deployment options out of the box:
 - Standalone Zeppelin node
