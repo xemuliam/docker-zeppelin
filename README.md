@@ -45,13 +45,13 @@ Deployment options out of the box:
 - Standalone Zeppelin node
 
 
-# Exposed ports
+## Exposed ports
 
 - 8080 - Zeppelin web application port
 - 8443 - Zeppelin web application secure port
 
 
-# Volumes
+## Volumes
 
 All below volumes can be mounted to docker host machine folders or shared folders to easy maintain data inside them. 
 
@@ -60,7 +60,19 @@ Zeppelin-specific:
 - /opt/zeppelin/notebook
 
 
-# Official Documentation and Guides
+## Additional environment properties
+
+To add more flexibility in configuration there are some environment variables have been added to the image.  
+
+- HOMESCREEN - Display note IDs (e.g. 2A94M5J1Z) on the Apache Zeppelin homescreen instead of standard Zeppelin homepage
+- HOMESCREEN_HIDE - Hide the note ID set by HOMESCREEN on the Apache Zeppelin homescreen.
+
+For the further information, please read [Customize your Zeppelin homepage](http://zeppelin.apache.org/docs/0.7.0/manual/notebookashomepage.html)
+
+__*Please keep in mind that above properties are content-dependent. Thus at first you should map your Notebook volume to container-independent storage and only then set above properties*__
+
+
+## Official Documentation and Guides
 
 - [Overview](http://zeppelin.apache.org/docs/0.6.2/)
 - [Quick Start](http://zeppelin.apache.org/docs/0.6.2/install/install.html)
@@ -75,7 +87,7 @@ This image can either be used as a base image for building on top of NiFi or jus
 Please use corresponding branches from this repo to play with code.
 
 
-# Pre-Requisites
+## Pre-Requisites
 Ensure the following pre-requisites are met (due to some blocker bugs in earlier versions). As of today, the latest Docker Toolbox and Homebrew are fine.
 
 - Docker 1.10+
@@ -85,7 +97,7 @@ Ensure the following pre-requisites are met (due to some blocker bugs in earlier
 (all downloadable as a single [Docker Toolbox](https://www.docker.com/products/docker-toolbox) package as well)
 
 
-# How to use from Kitematic
+## How to use from Kitematic
 
 1. Start Kitematic
 2. Enter `xemuliam` in serach box
@@ -95,7 +107,7 @@ Ensure the following pre-requisites are met (due to some blocker bugs in earlier
 Kitematic will assign all ports and you'll be able to run NiFi web-interface directly from Kitematic.
 
 
-# How to use from Docker CLI
+## How to use from Docker CLI
 
 1. Start Docker Quickstart Terminal
 2. Run command  `docker run -d -p 8080:8080 -p 8443:8443 xemuliam/zeppelin`
