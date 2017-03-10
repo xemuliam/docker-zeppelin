@@ -2,6 +2,13 @@
 
 set -e
 
+# Groovy interpreter
+rm -f ${ZEPPELIN_HOME}/conf/zeppelin-site.xml
+cp ${ZEPPELIN_HOME}/conf/zeppelin-site.xml.template ${ZEPPELIN_HOME}/conf/zeppelin-site.xml
+
+sed -i "s@\(<value>org.apache.zeppelin.spark.SparkInterpreter.*\)\(</value.*\)@\1,org.apache.zeppelin.groovy.GroovyInterpreter\2@" ${ZEPPELIN_HOME}/conf/zeppelin-site.xml
+sed -i "s@\(<value>spark,md.*\)\(</value.*\)@\1,groovy\2@" ${ZEPPELIN_HOME}/conf/zeppelin-site.xml
+
 # Zeppelin config
 if [ ! -z "$HOMESCREEN" ]; then
   cp ${ZEPPELIN_HOME}/conf/zeppelin-env.sh.template ${ZEPPELIN_HOME}/conf/zeppelin-env.sh
