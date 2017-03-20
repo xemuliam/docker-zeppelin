@@ -8,7 +8,8 @@ RUN        apk add --update \
            py2-pip \
            && pip install --upgrade pip \
            && pip install py4j \
-           && rm -rf /var/cache/apk/*COPY       . /${ZEPPELIN_HOME}/
+           && rm -rf /var/cache/apk/*
+COPY       . /${ZEPPELIN_HOME}/
 WORKDIR    ${ZEPPELIN_HOME}
 RUN        chmod +x ./start_zeppelin.sh
 CMD        ./start_zeppelin.sh
