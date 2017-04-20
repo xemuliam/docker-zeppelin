@@ -2,7 +2,8 @@
 
 # Zeppelin
 
-- ![Version](https://images.microbadger.com/badges/version/xemuliam/zeppelin:0.7.0.svg) ![Layers](https://images.microbadger.com/badges/image/xemuliam/zeppelin-base:0.7.0.svg) __0.7.0 = 0.7 = latest__
+- ![Version](https://images.microbadger.com/badges/version/xemuliam/zeppelin:0.7.1.svg) ![Layers](https://images.microbadger.com/badges/image/xemuliam/zeppelin-base:0.7.1.svg) __0.7.1 = 0.7 = latest__
+- ![Version](https://images.microbadger.com/badges/version/xemuliam/zeppelin:0.7.0.svg) ![Layers](https://images.microbadger.com/badges/image/xemuliam/zeppelin-base:0.7.0.svg) __0.7.0
 - ![Version](https://images.microbadger.com/badges/version/xemuliam/zeppelin:0.6.2.svg) ![Layers](https://images.microbadger.com/badges/image/xemuliam/zeppelin-base:0.6.2.svg) __0.6.2 = 0.6__
 
 [Docker](https://www.docker.com/what-docker) image for [Apache Zeppelin](http://zeppelin.apache.org)
