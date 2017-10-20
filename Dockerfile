@@ -1,4 +1,4 @@
-FROM       xemuliam/zeppelin-base:0.7.2
+FROM       xemuliam/zeppelin-base:0.7.3
 MAINTAINER Viacheslav Kalashnikov <xemuliam@gmail.com>
 ENV        HOMESCREEN="" \
            HOMESCREEN_HIDE=""
