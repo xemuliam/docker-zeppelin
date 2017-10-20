@@ -11,7 +11,7 @@ RUN        apk add --no-cache \
                freetype-dev \
                libpng-dev \
                python2-tkinter \
-               openblas-dev \
+#               openblas-dev \
                lapack-dev \
                libxml2-dev \
                libxslt-dev \
