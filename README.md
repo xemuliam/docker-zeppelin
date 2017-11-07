@@ -2,7 +2,8 @@
 
 # Zeppelin
 
-- ![Version](https://images.microbadger.com/badges/version/xemuliam/zeppelin:0.7.2.svg) ![Layers](https://images.microbadger.com/badges/image/xemuliam/zeppelin-base:0.7.2.svg) __0.7.2 = 0.7 = latest__
+- ![Version](https://images.microbadger.com/badges/version/xemuliam/zeppelin:0.7.3.svg) ![Layers](https://images.microbadger.com/badges/image/xemuliam/zeppelin-base:0.7.3.svg) __0.7.3 = 0.7 = latest__
+- ![Version](https://images.microbadger.com/badges/version/xemuliam/zeppelin:0.7.2.svg) ![Layers](https://images.microbadger.com/badges/image/xemuliam/zeppelin-base:0.7.2.svg) __0.7.2__
 - ![Version](https://images.microbadger.com/badges/version/xemuliam/zeppelin:0.7.1.svg) ![Layers](https://images.microbadger.com/badges/image/xemuliam/zeppelin-base:0.7.1.svg) __0.7.1__
 - ![Version](https://images.microbadger.com/badges/version/xemuliam/zeppelin:0.7.0.svg) ![Layers](https://images.microbadger.com/badges/image/xemuliam/zeppelin-base:0.7.0.svg) __0.7.0__
 - ![Version](https://images.microbadger.com/badges/version/xemuliam/zeppelin:0.6.2.svg) ![Layers](https://images.microbadger.com/badges/image/xemuliam/zeppelin-base:0.6.2.svg) __0.6.2 = 0.6__
@@ -43,7 +44,7 @@ DockerHub does not cache image layers while compilation. Thus creation of base i
 Dockerized single-host Zeppelin.  
 - Amended and recompiled __*JDBC interpreter*__ has been added to avoid full scan of database schemas and columns on interpreter initialization (there is SQL-completer which scans all described stuff. If your database contains tons of columns and tens schemas it will take several hours to initialize JDBC interpreter. Now this scan is switched off)
 - __*Groovy*__ added as interpreter for Groovy lovers 
-- __*Python*__ backend has been added
+- __*Python*__ backend has been added (from 0.7.3 *Python* backend has been extended by __*NumPy, SciPy, Pandas*__ and __*MatPlotLib*__
 
 Deployment options out of the box:
 - Standalone Zeppelin node
