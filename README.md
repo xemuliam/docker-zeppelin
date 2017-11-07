@@ -44,7 +44,7 @@ DockerHub does not cache image layers while compilation. Thus creation of base i
 Dockerized single-host Zeppelin.  
 - Amended and recompiled __*JDBC interpreter*__ has been added to avoid full scan of database schemas and columns on interpreter initialization (there is SQL-completer which scans all described stuff. If your database contains tons of columns and tens schemas it will take several hours to initialize JDBC interpreter. Now this scan is switched off)
 - __*Groovy*__ added as interpreter for Groovy lovers 
-- __*Python*__ backend has been added (from 0.7.3 *Python* backend has been extended by __*NumPy, SciPy, Pandas*__ and __*MatPlotLib*__
+- __*Python*__ backend has been added (from 0.7.3 *Python* backend has been extended by __*NumPy, SciPy, Pandas*__ and __*MatPlotLib*__)
 
 Deployment options out of the box:
 - Standalone Zeppelin node
