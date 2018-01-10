@@ -87,7 +87,7 @@ __*Please keep in mind that above properties are content-dependent. Thus at firs
 
 # Usage
 
-This image can either be used as a base image for building on top of NiFi or just to experiment with. I personally have not attempted to use this in a production use case.
+This image can either be used as a base image for building on top of Zeppelin or just to experiment with. I personally have not attempted to use this in a production use case.
 
 Please use corresponding branches from this repo to play with code.
 
@@ -109,7 +109,7 @@ Ensure the following pre-requisites are met (due to some blocker bugs in earlier
 3. Choose `zeppelin` image
 4. Click `Create` button
 
-Kitematic will assign all ports and you'll be able to run NiFi web-interface directly from Kitematic.
+Kitematic will assign all ports and you'll be able to run Zeppelin web-interface directly from Kitematic.
 
 
 ## How to use from Docker CLI
