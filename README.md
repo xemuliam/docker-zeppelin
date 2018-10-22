@@ -2,10 +2,11 @@
 
 # Zeppelin
 
-- ![Version](https://images.microbadger.com/badges/version/xemuliam/zeppelin:0.7.3.svg) ![Layers](https://images.microbadger.com/badges/image/xemuliam/zeppelin-base:0.7.3.svg) __0.7.3 = 0.7 = latest__
-- ![Version](https://images.microbadger.com/badges/version/xemuliam/zeppelin:0.7.2.svg) ![Layers](https://images.microbadger.com/badges/image/xemuliam/zeppelin-base:0.7.2.svg) __0.7.2__
-- ![Version](https://images.microbadger.com/badges/version/xemuliam/zeppelin:0.7.1.svg) ![Layers](https://images.microbadger.com/badges/image/xemuliam/zeppelin-base:0.7.1.svg) __0.7.1__
-- ![Version](https://images.microbadger.com/badges/version/xemuliam/zeppelin:0.7.0.svg) ![Layers](https://images.microbadger.com/badges/image/xemuliam/zeppelin-base:0.7.0.svg) __0.7.0__
+- ![Version](https://images.microbadger.com/badges/version/xemuliam/zeppelin:0.8.0.svg) ![Layers](https://images.microbadger.com/badges/image/xemuliam/zeppelin-base:0.8.0.svg) __0.8.0 = 0.8 = latest__
+- ![Version](https://images.microbadger.com/badges/version/xemuliam/zeppelin:0.7.3.svg) ![Layers](https://images.microbadger.com/badges/image/xemuliam/zeppelin-base:0.7.3.svg) __0.7.3 = 0.7__
+- ![Version](https://images.microbadger.com/badges/version/xemuliam/zeppelin:0.7.2.svg) ![Layers](https://images.microbadger.com/badges/image/xemuliam/zeppelin-base:0.7.2.svg)
+- ![Version](https://images.microbadger.com/badges/version/xemuliam/zeppelin:0.7.1.svg) ![Layers](https://images.microbadger.com/badges/image/xemuliam/zeppelin-base:0.7.1.svg)
+- ![Version](https://images.microbadger.com/badges/version/xemuliam/zeppelin:0.7.0.svg) ![Layers](https://images.microbadger.com/badges/image/xemuliam/zeppelin-base:0.7.0.svg)
 - ![Version](https://images.microbadger.com/badges/version/xemuliam/zeppelin:0.6.2.svg) ![Layers](https://images.microbadger.com/badges/image/xemuliam/zeppelin-base:0.6.2.svg) __0.6.2 = 0.6__
 
 [Docker](https://www.docker.com/what-docker) image for [Apache Zeppelin](http://zeppelin.apache.org)
@@ -42,9 +43,9 @@ DockerHub does not cache image layers while compilation. Thus creation of base i
 # Overview
 
 Dockerized single-host Zeppelin.  
-- Amended and recompiled __*JDBC interpreter*__ has been added to avoid full scan of database schemas and columns on interpreter initialization (there is SQL-completer which scans all described stuff. If your database contains tons of columns and tens schemas it will take several hours to initialize JDBC interpreter. Now this scan is switched off)
-- __*Groovy*__ added as interpreter for Groovy lovers 
-- __*Python*__ backend has been added (from 0.7.3 *Python* backend has been extended by __*NumPy, SciPy, Pandas*__ and __*MatPlotLib*__)
+- Amended and recompiled __*JDBC interpreter*__ (since 0.8 following bug has been fixed and included in standard distribution) has been added to avoid full scan of database schemas and columns on interpreter initialization (there is SQL-completer which scans all described stuff. If your database contains tons of columns and tens schemas it will take several hours to initialize JDBC interpreter. Now this scan is switched off)
+- __*Groovy*__ added as interpreter for Groovy lovers (since 0.8 it is community-supported interpreter)
+- __*Python*__ backend (since 0.8 it is Python3) has been added (from 0.7.3 *Python* backend has been extended by __*NumPy, SciPy, Pandas*__ and __*MatPlotLib*__)
 
 Deployment options out of the box:
 - Standalone Zeppelin node
