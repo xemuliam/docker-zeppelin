@@ -1,21 +1,22 @@
-FROM       xemuliam/zeppelin-base:0.7.3
+FROM       xemuliam/zeppelin-base:0.8.0
 MAINTAINER Viacheslav Kalashnikov <xemuliam@gmail.com>
 ENV        HOMESCREEN="" \
            HOMESCREEN_HIDE=""
 RUN        apk add --no-cache \
                build-base \
                gfortran \
-               python2 \
-               python2-dev \
-               py2-pip \
+               python3 \
+               python3-dev \
                freetype-dev \
                libpng-dev \
-               python2-tkinter \
+               python3-tkinter \
 #               openblas-dev \
                lapack-dev \
                libxml2-dev \
                libxslt-dev \
                jpeg-dev \
+           && python3 -m easy_install pip \
+           && ln -sf /usr/bin/python3 /usr/bin/python \
            && pip install --upgrade pip \
            && pip install \
                   py4j \
