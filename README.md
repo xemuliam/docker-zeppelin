@@ -1,4 +1,4 @@
-![zeppelin-logo](https://i.imgur.com/Bt9Zhq0.png)
+![zeppelin-logo](https://i.imgur.com/HqlsKv1.png)
 
 # Zeppelin
 
