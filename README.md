@@ -13,7 +13,7 @@
 
 - ![Docker builds](https://img.shields.io/docker/automated/xemuliam/zeppelin.svg) ![Docker Pulls](https://img.shields.io/docker/pulls/xemuliam/zeppelin.svg) ![Docker Stars](https://img.shields.io/docker/stars/xemuliam/zeppelin.svg)
  
-Created from Zepplin [base image](https://hub.docker.com/r/xemuliam/zeppelin-base) to minimize traffic and deployment time in case of changes should be applied on top of Zeppelin.
+Created from Zeppelin [base image](https://hub.docker.com/r/xemuliam/zeppelin-base) to minimize traffic and deployment time in case of changes should be applied on top of Zeppelin.
 
 ## Why base image is required?
 
@@ -43,7 +43,7 @@ DockerHub does not cache image layers while compilation. Thus creation of base i
 # Overview
 
 Dockerized single-host Zeppelin.  
-- Amended and recompiled __*JDBC interpreter*__ (since 0.8 following bug has been fixed and included in standard distribution) has been added to avoid full scan of database schemas and columns on interpreter initialization (there is SQL-completer which scans all described stuff. If your database contains tons of columns and tens schemas it will take several hours to initialize JDBC interpreter. Now this scan is switched off)
+- Amended and recompiled __*JDBC interpreter*__ (since 0.8 following bug has been fixed and fix is already included in standard distribution) has been added to avoid full scan of database schemas and columns on interpreter initialization (there is SQL-completer which scans all described stuff. If your database contains tons of columns and tens schemas it will take several hours to initialize JDBC interpreter. Now this scan is switched off)
 - __*Groovy*__ added as interpreter for Groovy lovers (since 0.8 it is community-supported interpreter)
 - __*Python*__ backend (since 0.8 it is Python3) has been added (from 0.7.3 *Python* backend has been extended by __*NumPy, SciPy, Pandas*__ and __*MatPlotLib*__)
 
